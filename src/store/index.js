@@ -17,9 +17,28 @@ export default new Vuex.Store({
       const newArr = arr.map((obj) => {
         const newObj = { ...obj };
         const parse = JSON.parse(obj.clockIn);
-        newObj.time = parse.time;
-        newObj.address = parse.address;
+        const parse2 = JSON.parse(obj.clockOut);
+        if (parse === null) {
+          newObj.timeIn = '-';
+          newObj.addressIn = '-';
+        } else {
+          const times = parse.time.replace('T', ' ');
+          newObj.timeIn = times;
+          newObj.addressIn = parse.address;
+        }
+        if (parse2 === null) {
+          newObj.timeOut = '-';
+          newObj.addressOut = '-';
+        } else {
+          const times = parse2.time.replace('T', ' ');
+          newObj.timeOut = times;
+          newObj.addressOut = parse2.address;
+        }
+        // if (newObj.time === null) {
+        //   newObj.time == '-';
+        // }
         newObj.clockIn = parse;
+        newObj.clockOut = parse2;
         return newObj;
       });
       state.attendance = newArr;
@@ -33,6 +52,8 @@ export default new Vuex.Store({
         const newObj = { ...obj };
         const parse = JSON.parse(obj.location);
         newObj.address = parse.address;
+        const times = newObj.createdOn.replace('T', ' ');
+        newObj.createdOn = times;
         newObj.clockIn = parse;
         return newObj;
       });

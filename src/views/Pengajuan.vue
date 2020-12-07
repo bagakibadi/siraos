@@ -48,7 +48,7 @@
             >
               <template v-slot:item.attachment="{ item }">
                 <div class="p-2">
-                  <img :src="'https://siraos.itopsp3.my.id/' + item.attachment" :alt="item.name" height="100px">
+                  <img :src="'https://siraos.itopsp3.my.id/' + item.attachment" :alt="item.name" style="overflow: hidden;" height="100px">
                 </div>
               </template>
             </v-data-table>
@@ -74,8 +74,10 @@ export default {
         { text: 'Dari Tanggal', value: 'startDate' },
         { text: 'Sampai Tanggal', value: 'endDate' },
         { text: 'Dibuat', value: 'createdOn' },
-        { text: 'Lampiran', value: 'attachment' },
-        { text: 'Address', value: 'address' },
+        {
+          text: 'Lampiran', value: 'attachment', width: '5%', overflow: 'hidden',
+        },
+        { text: 'Address', value: 'address', width: '25%' },
         // { text: '', value: '' },
       ],
     };

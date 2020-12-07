@@ -7,3 +7,13 @@
 export default {
 };
 </script>
+
+<style>
+  @font-face {
+    font-family: 'Fonts';
+    src: url('./assets/Font.ttf');
+  }
+  *{
+    font-family: 'Fonts';
+  }
+</style>

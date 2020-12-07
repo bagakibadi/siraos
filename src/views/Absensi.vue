@@ -65,9 +65,12 @@ export default {
       search: '',
       headers: [
         { text: 'Username', value: 'username' },
-        { text: 'Time', value: 'time' },
-        { text: 'Address', value: 'address', width: '30%' },
-        // { title: '', value: '' },
+        { text: 'Time Created', value: 'createdOn' },
+        { text: 'Clock In', value: 'timeIn' },
+        { text: 'Address In', value: 'addressIn', width: '25%' },
+        { text: 'Clock Out', value: 'timeOut' },
+        { text: 'Address Out', value: 'addressOut', width: '25%' },
+        // { text: '', value: '' },
       ],
     };
   },

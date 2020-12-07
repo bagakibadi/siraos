@@ -23,7 +23,7 @@
                           />
                         </a> -->
                         <div class="text-center logos">
-                          <img src="" alt="">
+                          <img src="../assets/images/Siraos.png" alt="">
                         </div>
                         <div
                           class="media-body align-self-center text-truncate ml-2"
@@ -263,5 +263,8 @@ export default {
 .logos img {
   width: 200px;
   margin-bottom: 20px;
+}
+.logos{
+  width: auto;
 }
 </style>

@@ -79,7 +79,7 @@ export default {
       search: '',
       thead: [
         { text: 'Agency Name', value: 'agency_name' },
-        { text: 'Agency Role', value: 'agency_role' },
+        { text: 'Jabatan', value: 'agency_role' },
         { text: 'Agency Type', value: 'agency_type' },
         { text: 'Fullname', value: 'fullname' },
         { text: 'Username', value: 'username' },

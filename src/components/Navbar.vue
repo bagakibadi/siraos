@@ -45,10 +45,10 @@
                 <router-link class="nav-link" to="/absensi"><i class="mdi mdi-account-edit"></i> Data Absensi</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/pengajuan"><i class="mdi mdi-account-edit"></i> Data Pengajuan</router-link>
+                <router-link class="nav-link" to="/pengajuan"><i class="mdi mdi-file-document-box"></i> Data Pengajuan</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/shift"><i class="mdi mdi-account-edit"></i> Data Shift</router-link>
+                <router-link class="nav-link" to="/shift"><i class="mdi mdi-image-filter-tilt-shift"></i> Data Shift</router-link>
               </li>
             </ul>
           </div>
@@ -571,7 +571,10 @@ export default {
   /* height: 45px; */
 }
 .topbar{
-  z-index: 20;
+  z-index: 10;
+}
+.topbar-left{
+  z-index: 11;
 }
 .inputs .form-group{
   margin: 0;
